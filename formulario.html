@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+<div>
+<h1 id="titulo">Questionario informativo:Voce ja passou por alguma situação de assedio?</h1>
+<p id="subtitulo">Complete suas informações </p>
+<form action="">
+    <fieldset>
+        <div>
+            <label>Nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label>Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </div>
+    </fieldset>
+        <div>
+            <label>E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>Qual seu genero?</label>
+            <input type="radio" name="feminino" id="feminino">Feminino
+            <input type="radio" name="masculino" id="masculino">Masculino
+        </div>
+        <div>
+            <label>Voce ja passou por alguma situação de assédio?se sim, foi mais de uma vez?</label>
+            <label>
+              <input type="radio" name="nao_passei" value="nao_passei" >Nunca passei  
+            </label>
+            <label>
+                <input type="radio" name="sim_uma" value="sim_uma">Sim, uma vez
+            </label>
+            <label>
+                <input type="radio" name="sim,duas_ou_mais" value="sim,duas_ou_mais" >Sim, duas ou mais vezes
+            </label>
+        </div>
+        <div>
+            <label>Se sim, foi por algum conhecido?</label>
+            <select name="conhecido?" id="conhecido?">
+                <option selected disabled value="selecione"></option>
+                <option>Não, era um desconhecido</option>
+                <option>Sim, foi um parente</option>
+                <option>Sim, foi um amigo</option>
+                <option>Sim, foi um superior(Trabalho, Escola...)</option>
+            </select>
+        </div>
+        <fieldset>
+            <div>
+                <label>Em qual local isso ocorreu?</label><br>
+                <input type="checkbox" id="escola" name="escola" value="escola">
+                <label for="escola">Na escola</label>
+                <input type="checkbox" id="casa" name="casa" value="casa">
+                <label for="casa">Em casa</label>
+                <input type="checkbox" id="trabalho" name="trabalho" value="trabalho">
+                <label for="">No trabalho</label>
+                <input type="checkbox" id="local_publico" name="local_publico" value="local_publico">
+                <label for="local_publico">Local publico</label>
+            </div>
+        </fieldset>
+        <div>
+            <label>Como voce se sentiu?</label>
+            <textarea name="sentimentos" id="sentimentos" rows="6" style="width: 26cm;"></textarea>
+        </div>
+        <button type="submit">Concluido</button>
+</form>
+
+</div>
+</body>
+</html>
