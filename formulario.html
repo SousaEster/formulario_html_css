@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
-<div>
-<h1 id="titulo">Questionario informativo:Voce ja passou por alguma situação de assedio?</h1>
-<p id="subtitulo">Complete suas informações </p>
+<main>
+    <div>
+<h1 id="titulo" >Questionario informativo:Voce ja passou por alguma situação de assedio?</h1>
+<p id="subtitulo" >Complete suas informações </p>
 <form action="">
     <fieldset class="grupo">
         <div class="campo">
-            <label for="nome" >Nome</label>
+            <label for="nome" strong>Nome</label>
             <input type="text" name="nome" id="nome" required>
         </div>
         <div>
-            <label for="sobrenome">Sobrenome</label>
+            <label for="sobrenome" strong>Sobrenome</label>
             <input type="text" name="sobrenome" id="sobrenome" required>
         </div>
     </fieldset>
         <div class="campo">
-            <label for="email">E-mail</label>
+            <label for="email" strong>E-mail</label>
             <input type="email" name="email" id="email" required>
         </div>
         <div class="campo">
-            <label for="genero">Qual seu genero?</label>
+            <label for="genero" strong>Qual seu genero?</label>
             <input type="radio" name="feminino" id="feminino">Feminino
             <input type="radio" name="masculino" id="masculino">Masculino
         </div>
         <div class="campo">
-            <label>Voce ja passou por alguma situação de assédio?se sim, foi mais de uma vez?</label>
+            <label strong>Voce ja passou por alguma situação de assédio?se sim, foi mais de uma vez?</label>
             <label>
               <input type="radio" name="nao_passei" value="nao_passei" >Nunca passei  
             </label>
@@ -43,7 +44,7 @@
             </label>
         </div>
         <div class="campo">
-            <label>Se sim, foi por algum conhecido?</label>
+            <label strong>Se sim, foi por algum conhecido?</label>
             <select name="conhecido?" id="conhecido?">
                 <option selected disabled value="selecione"></option>
                 <option>Não, era um desconhecido</option>
@@ -53,8 +54,8 @@
             </select>
         </div>
         <fieldset class="grupo">
-            <div class="campo">
-                <label>Em qual local isso ocorreu?</label><br>
+            <div id="check">
+                <label strong>Em qual local isso ocorreu?</label><br>
                 <input type="checkbox" id="escola" name="escola" value="escola">
                 <label for="escola">Na escola</label>
                 <input type="checkbox" id="casa" name="casa" value="casa">
@@ -66,12 +67,12 @@
             </div>
         </fieldset>
         <div class="campo">
-            <label>Como voce se sentiu?</label>
+            <label strong>Como voce se sentiu?</label>
             <textarea name="sentimentos" id="sentimentos" rows="6" style="width: 26cm;"></textarea>
         </div>
-        <button type="submit">Concluido</button>
+        <button type="submit" class="botao">Concluido</button>
 </form>
-
+</main>
 </div>
 </body>
 </html>
