@@ -98,12 +98,18 @@ transform: translate(-50%,-50%);
    margin: 2em 2em;
     }
 }
-@media screen and (max-width:600px) {
-    body{margin:0%;
+@media screen and (max-width:600px) {    body{margin:1%;
         flex-direction: column;
     }
-    
+    form{width: 100%;}
 }
-
+@media screen and(max-width:1064) {
+    .grupo{flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;}
+    }
 
 
